@@ -1,0 +1,126 @@
+﻿#keyboardInputMaster {
+  position:absolute;
+  color:#333;
+  /*background:url(../images/search/keyboard_bg.png) no-repeat 0 0;*/
+  background-color:#fff;
+  border:1px solid #ccc;
+  text-align:left;
+  z-index:1000000;
+  width:517px;
+  padding:5px;
+  box-shadow: 0 2px 2px 0 #eee;
+}
+#keyboardInputMaster table {table-layout: auto;border-spacing:3px;border:0;margin-bottom:-4px}
+#keyboardInputMaster select {height:20px;padding:0;line-height:18px;border:0;width:42px !important;
+	/*background:url(../images/search/keyboard_lang.png) no-repeat 0 0;*/
+	border:1px solid #aaa;background-color:#FBFBFB;border-radius:3px;
+}
+#keyboardInputMaster thead tr th {
+  text-align:left;
+  padding:2px 5px 2px 4px;
+  background-color:inherit;
+  border:0px none;
+}
+#keyboardInputMaster thead tr th select,
+#keyboardInputMaster thead tr th label {
+  color:#000000;
+  font:normal 11px Arial,sans-serif;
+}
+#keyboardInputMaster thead tr td {
+	text-align:right;
+	padding:2px 6px 2px 5px;
+	background-color:inherit;
+	border:0px none;
+}
+#keyboardInputMaster #keyboardInputClear {width:38px;height:18px;text-align:center;
+	/*background:url(../images/search/keyboard_clear.png) no-repeat 0 0;*/
+	border:1px solid #aaa;
+	background-color:#FBFBFB;
+	border-top-left-radius:3px;
+	line-height:18px;
+}
+#keyboardInputMaster #keyboardInputClose {width:19px;height:18px;text-align:center;
+/* 	background:url(../images/search/keyboard_close.png) no-repeat 0 0; */
+	border:1px solid #aaa;
+	background-color:#FBFBFB;
+	border-top-right-radius:3px;
+	margin-left:-1px;
+	line-height:18px;}
+#keyboardInputMaster thead tr td span {
+  font:bold 11px Arial,sans-serif;
+  display:inline-block;
+  cursor:pointer;
+}
+#keyboardInputMaster thead tr td span.pressed {
+ }
+
+#keyboardInputMaster tbody tr td {
+  text-align:left;
+  margin:0px;
+  padding:0px
+/*   padding:0px 4px 3px 4px; */
+}
+#keyboardInputMaster tbody tr td div {
+  text-align:center;
+  position:relative;
+  height:0px;
+}
+#keyboardInputMaster tbody tr td div#keyboardInputLayout {
+  height:auto;
+}
+#keyboardInputMaster tbody tr td div#keyboardInputLayout table {border-radius:4px 4px 4px 4px;
+  height:20px;
+  white-space:nowrap;
+  width:100%;
+  border-collapse:separate;
+}
+#keyboardInputMaster tbody tr td div#keyboardInputLayout table td {border-radius: 4px;/*background:url(../images/search/keyboard_key.png) repeat-x top; */ 
+background:#efefef;border:1px solid #ddd;}
+/* #keyboardInputMaster tbody tr td div#keyboardInputLayout table td.last {background:url(../images/search/keyboard_key2.png) repeat-x top} */
+#keyboardInputMaster tbody tr td div#keyboardInputLayout table.keyboardInputCenter {background:transparent;
+  width:254px;height:36px;
+  margin:5px auto 5px !important;border:0;
+}
+#keyboardInputMaster tbody tr td div#keyboardInputLayout table.keyboardInputCenter td {border:0;	border:1px solid #ddd;	background-color:#efefef;	border-radius:3px;}
+#keyboardInputMaster tbody tr td div#keyboardInputLayout table tbody tr td {
+	vertical-align:middle;
+	padding:4px 9px;
+	white-space:pre;
+	font-size:12px;font-weight:normal;
+	font-family:"나눔고딕","맑은 고딕", "Malgun Gothic";
+	cursor:default;color:#000;
+}
+#keyboardInputMaster tbody tr td div#keyboardInputLayout table tbody tr td.last {
+  width:99%;
+}
+#keyboardInputMaster tbody tr td div#keyboardInputLayout table tbody tr td.alive {
+  background-color:#ccccdd;
+}
+#keyboardInputMaster tbody tr td div#keyboardInputLayout table tbody tr td.target {
+  background-color:#ddddcc;
+}
+#keyboardInputMaster tbody tr td div#keyboardInputLayout table tbody tr td.hover {}
+#keyboardInputMaster tbody tr td div#keyboardInputLayout table tbody tr td.pressed,
+#keyboardInputMaster tbody tr td div#keyboardInputLayout table tbody tr td.dead {
+  border-top:1px solid #cacaca;
+  border-right:1px solid #cacaca;
+  border-bottom:1px solid #cacaca;
+  border-left:1px solid #aaaaaa;
+  background-color:#d5d5d5;
+}
+
+#keyboardInputMaster tbody tr td div var {
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  font-size:12px;font-weight:normal;
+  font-family:"나눔고딕","맑은 고딕", "Malgun Gothic";
+  color:#444444;
+}
+
+.keyboardInputInitiator {
+  margin-left:3px;
+  vertical-align:middle;
+  cursor:pointer;
+  position:absolute;top:12px;right:42px;
+}

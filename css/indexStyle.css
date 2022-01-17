@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* 패딩 마진 초기화 */
+*{margin: 0; padding: 0;}
+/* 폰트첨부 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+/* a테그 스타일 해제 */
+/* 리스트스타일 헤제 */
+ul{list-style: none;}
+a{text-decoration: none; color: black;}
+
+/* 폰트적용 */
+body{font-family: 'Noto Sans KR', sans-serif;  font: 16px;}
+
+/* 아이디 적용 */
+#wrap{width: 100%;}
+
+/* 클래스 적용 */
+.header{margin: 0 auto; height: 130px; width: 1400px; }
+.header>.headerTop{width: 1400px; height: 50px; margin: 0 auto; position: relative;}
+.header>.headerTop>.leftTopNav{height: 14px; width: 80px; margin: 20px 19px; float: left; }
+.header>.headerTop>.leftTopNav a{color: lightslategrey;}
+.header>.headerTop>.headerTopCenter{width: 400px; height: 50px; margin: 0 auto;}
+.header>.headerTop>.headerTopRight{ width: 330px; height: 30px;}
+.header>.headerTop>.headerTopRight>.snsicon:not(:last-child) a img{width: 30px; height: 30px;}
+
+.header>.headerTop>.headerTopRight>.snsicon:nth-child(7){position: absolute; top: 10px; right: 0px; width: 96px; height: 34px;}
+.header>.headerTop>.headerTopRight>.snsicon:nth-child(6){position: absolute; top: 10px; right: 96px; width: 30px; height: 30px; scale: 1.5;}
+.header>.headerTop>.headerTopRight>.snsicon:nth-child(5){position: absolute; top: 12px; right: 132px; width: 30px; height: 30px;}
+.header>.headerTop>.headerTopRight>.snsicon:nth-child(4){position: absolute; top: 12px; right: 168px; width: 30px; height: 30px;}
+.header>.headerTop>.headerTopRight>.snsicon:nth-child(3){position: absolute; top: 12px; right: 214px; width: 30px; height: 30px;}
+.header>.headerTop>.headerTopRight>.snsicon:nth-child(2){position: absolute; top: 12px; right: 250px; width: 30px; height: 30px;}
+.header>.headerTop>.headerTopRight>.snsicon:nth-child(1){position: absolute; top: 12px; right: 286px; width: 30px; height: 30px;}
+
+.header>.headerBottom{width: auto; margin: 0 auto; ; height: 80px;}
+.header>.headerBottom>.TitleLogo{margin: 16px 0;}
+.header>.headerBottom>.TitleLogo a img{width: 190px; height: 50px;}
+.header>.headerBottom>.TitleLogo a:nth-child(2) img{width: 120px; height: 50px; margin-left: 15px;}
+
