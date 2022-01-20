@@ -16,6 +16,7 @@ body{font-family: 'Noto Sans KR', sans-serif;  font: 16px;}
 #wrap{width: 100%;}
 
 /* 클래스 적용 */
+.blind{display: none;}
 .header{margin: 0 auto; height: 130px; width: 100%;}
 .header>.headerTop{height: 50px; margin: 0 auto; position: relative; border-bottom: 1px lightgray solid; }
 .header>.headerTop>.headerTopInner{width: 1400px;margin: 0 auto; height: 50px;position: relative;}
@@ -46,15 +47,26 @@ body{font-family: 'Noto Sans KR', sans-serif;  font: 16px;}
 .header>.headerBottom>.headerBottomInner>.menu>ul>li:hover{ font-weight: bold; border-bottom: 10px solid #3480c4;}
 
 .header>.headerBottom>.headerBottomInner>.menu>ul>li:hover .bg1{display: block;}
-.header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1{display: none; position: absolute; top: 80px; left:-400px; width: 100vw; height: auto; background: #c2dbf4;}
-.header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps{height: auto; width: 100%; padding: 30px 0;}
-.header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps dl{}
+.header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1{display: none; position: absolute; top: 80px; left:-103%; width: 110vw; height: auto; background: #c2dbf4;}
+.header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps{width:1400px; margin: 0 auto;}
 .header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps dl .sub_menu{ width: 200px; padding: 10px 0; height: auto; float: left;}
-.header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps dl .sub_menu:last-child{clear: both; float: left;}
+.header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps dl .sub_menu .jumpToGovPortal a::after{display: inline-block; content: ""; width: 15px; height: 15px; background: url(../img/gnb_blank.png) no-repeat 0 0; margin-left: 5px;}
 .header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps dl .sub_menu dt{margin-bottom: 10px;}
 .header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps dl .sub_menu dt>a{font-size: 17px; font-weight: 700;}
 .header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps dl dd{margin-bottom: 5px;}
 .header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps dl dd>a{font-size: 14px; font-weight: normal; color: gray;}
 .header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps dl dd>a:hover{font-weight: bold; color: black;}
 
+
+.header>.headerBottom>.headerBottomInner>.headerSearchBar{ position: absolute; top: 20px; right: 0;}
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch{border: 2px solid lightgrey;  border-radius: 15px; width: 230px; height: 35px;}
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch #searchForm{}
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch #searchForm fieldset {border-style: none;}
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch #searchForm fieldset .searchWrap {padding-top: 3px; padding-left: 5px;}
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch #searchForm fieldset .searchWrap select{border-style: none; background: white; width: 70px; height: 30px; font-size: 14px;}
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch #searchForm fieldset .searchWrap select:focus{border: 2px solid black; border-radius: 5px; font-size: 14px;}
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch #searchForm fieldset .searchWrap .search{width: 90px; height: 30px; border: none;}
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch #searchForm fieldset .searchWrap .search:focus{border-style:none; border: 2px solid black;  border-radius: 5px;}
+
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch #searchForm fieldset .searchWrap>.searchBtn>img{width: 15px; height: 15px; margin-top: 2px; margin-left: 5px;}
 
