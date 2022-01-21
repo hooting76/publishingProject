@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/indexStyle.css">
+    <link rel="stylesheet" href="css/reset.css">
     <title>소방청</title>
 </head>
 <body>
@@ -37,11 +38,38 @@
                             <img src="./img/보다나은소방청.jpg" alt="보다나은 소방청">
                         </a>
                     </div>
+                    <div class="headerSearchBar">
+                        <h3 class="blind">통합검색</h3>
+                        <div class="headerSearch">
+                            <form action="#" name="searchForm" method="post" id="searchForm" target="_blank">
+                                <fieldset>
+                                    <div class="searchWrap">
+                                        <select name="search_menu" id="search_category">
+                                            <option value>전체</option>
+                                            <option value="news">뉴스</option>
+                                            <option value="menu">메뉴</option>
+                                            <option value="member">직원</option>
+                                            <option value="info">정보</option>
+                                            <option value="video">동영상</option>
+                                            <option value="image">이미지</option>
+                                            <option value="data">자료</option>
+                                        </select>
+                                        <!-- aria-label="Search through site content"는 웹 접근성을 위한 안내글 이라고 보면된다. -->
+                                        <input type="search" name="search" id="search" aria-label="Search through site content" class="search">
+                                        <a href="#">
+                                            <img src="./img/keyboard.png" alt="화상키보드">
+                                        </a>
+                                        <a href="#" class="searchBtn"><img src="./img/searchBtn.png" alt="검색버튼"></a>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
                     <div class="menu">
                         <ul>
                             <li><a href="#">국민소통</a>
                                 <div class="bg1">
-                                    <div class="two_deps">
+                                    <div class="two_deps cf">
                                         <dl>
                                             <div class="sub_menu">
                                                 <dt><a href="#">+ 소방안전활동상황</a></dt>
@@ -280,33 +308,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="headerSearchBar">
-                        <h3 class="blind">통합검색</h3>
-                        <div class="headerSearch">
-                            <form action="#" name="searchForm" method="post" id="searchForm" target="_blank">
-                                <fieldset>
-                                    <div class="searchWrap">
-                                        <select name="search_menu" id="search_category">
-                                            <option value>전체</option>
-                                            <option value="news">뉴스</option>
-                                            <option value="menu">메뉴</option>
-                                            <option value="member">직원</option>
-                                            <option value="info">정보</option>
-                                            <option value="video">동영상</option>
-                                            <option value="image">이미지</option>
-                                            <option value="data">자료</option>
-                                        </select>
-                                        <!-- aria-label="Search through site content"는 웹 접근성을 위한 안내글 이라고 보면된다. -->
-                                        <input type="search" name="search" id="search" aria-label="Search through site content" class="search">
-                                        <a href="#">
-                                            <img src="./img/keyboard.png" alt="화상키보드">
-                                        </a>
-                                        <a href="#" class="searchBtn"><img src="./img/searchBtn.png" alt="검색버튼"></a>
-                                    </div>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
