@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* 패딩 마진 초기화 */
+
+* {margin: 0;padding: 0; } 
+
+
+/* 폰트첨부 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300; 400; 500; 700&display=swap');
+/* a테그 스타일 해제 */
+
+
+/* 리스트스타일 헤제 */
+
+ul {list-style: none; } 
+
+a {text-decoration: none;color: black; } 
+
+.blind {display: none; } 
+
+
+/* 전체적용 */
+
+body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; } 
+
+#wrap {width: 100%; } 
+
+
+/* 해더 위치조정 */
+
+.header {margin: 0 auto;height: 130px;width: 100%;position: relative; } 
+
+
+/* 해더탑 위치조정 */
+
+.header>.headerTop {height: 50px;margin: 0 auto;position: relative;border-bottom: 1px lightgray solid; } 
+
+.header>.headerTop>.headerTopInner {width: 1400px;margin: 0 auto;height: 50px;position: relative; } 
+
+
+/* 왼쪽상단 메뉴 */
+
+.header>.headerTop>.headerTopInner>.leftTopNav {height: 14px;width: 80px;margin: 13px 19px;float: left; font-size: 14px;} 
+
+.header>.headerTop>.headerTopInner>.leftTopNav a {color: lightslategrey; } 
+
+
+/* 상단정가운데 캠페인이미지 */
+
+.header>.headerTop>.headerTopInner>.headerTopCenter {width: 400px;height: 50px;margin: 0 auto; } 
+
+
+/* sns아이콘 */
+
+.header>.headerTop>.headerTopInner>.headerTopRight {width: 330px;height: 30px; } 
+
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:not(:last-child) a img {width: 30px;height: 30px; } 
+
+
+/* sns아이콘 위치조정 */
+
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:nth-child(7) {position: absolute;top: 10px;right: 0px;width: 96px;height: 34px; } 
+
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:nth-child(6) {position: absolute;top: 10px;right: 96px;width: 30px;height: 30px;scale: 1.5; } 
+
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:nth-child(5) {position: absolute;top: 12px;right: 132px;width: 30px;height: 30px; } 
+
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:nth-child(4) {position: absolute;top: 12px;right: 168px;width: 30px;height: 30px; } 
+
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:nth-child(3) {position: absolute;top: 12px;right: 214px;width: 30px;height: 30px; } 
+
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:nth-child(2) {position: absolute;top: 12px;right: 250px;width: 30px;height: 30px; } 
+
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:nth-child(1) {position: absolute;top: 12px;right: 286px;width: 30px;height: 30px; } 
+
+
+/* 해드바텀 위치조정 */
+
+.header>.headerBottom {width: auto;margin: 0 auto;;height: 80px;border-bottom: 1px lightgray solid; } 
+
+.header>.headerBottom>.headerBottomInner {width: 1400px;margin: 0 auto;height: 80px; } 
+
+
+/* 소방청 로고 */
+
+.header>.headerBottom>.headerBottomInner>.TitleLogo {margin: 16px 0;width: 350px;height: 50px;float: left; } 
+
+.header>.headerBottom>.headerBottomInner>.TitleLogo a img {width: 190px;height: 50px; } 
+
+.header>.headerBottom>.headerBottomInner>.TitleLogo a:nth-child(2) img {width: 120px;height: 50px;margin-left: 15px; } 
+
+
+/* 메뉴바 */
+
+.header>.headerBottom>.headerBottomInner>.menu {width: 750px;height: 50px;margin: 0 auto; } 
+
+.header>.headerBottom>.headerBottomInner>.menu>ul {height: 40px;width: 771px; } 
+
+.header>.headerBottom>.headerBottomInner>.menu>ul>li {float: left; } 
+
+.header>.headerBottom>.headerBottomInner>.menu>ul>li>a {text-align: center;color: #353535;font-size: 22px;display: block;padding: 19.5px 30px; } 
+.header>.headerBottom>.headerBottomInner>.menu>ul>li:first-child>a {font-weight: bold;border-bottom: 8px solid #3480c4; } 
+
+.header>.headerBottom>.headerBottomInner>.menu>ul>li:not(:first-child):hover {font-weight: bold;border-bottom: 8px solid #3480c4; } 
+
+
+/* 2depth영역 */
+
+.header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 {display: none;position: absolute;top: 132px;left: 0;width: 100%;height: 0px;background: rgba(194, 219, 244, .8);z-index: 500; } 
+
+.header>.headerBottom>.headerBottomInner>.menu>ul>li:hover .bg1 {display: block;height: auto; } 
+
+.header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps {width: 1400px;margin: 0 auto; } 
+
+.header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps dl .sub_menu {width: 200px;padding: 10px 0;height: auto;float: left; } 
+
+.jumpToGovPortal a::after {display: inline-block;content: "";width: 15px;height: 15px;background: url(../img/gnb_blank.png) no-repeat 0 0;margin-left: 5px; } 
+
+.header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps dl .sub_menu dt {margin-bottom: 10px; } 
+
+.header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps dl .sub_menu dt>a {font-size: 17px;font-weight: 700; } 
+
+.header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps dl dd {margin-bottom: 5px; } 
+
+.header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps dl dd>a {font-size: 14px;font-weight: normal;color: gray; } 
+
+.header>.headerBottom>.headerBottomInner>.menu>ul>li .bg1 .two_deps dl dd>a:hover {font-weight: bold;color: black; } 
+
+
+/* 검색창 */
+
+.header>.headerBottom>.headerBottomInner>.headerSearchBar {width: 230px;height: 37px;float: right;margin-top: 20px; } 
+
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch {border: 2px solid lightgrey;border-radius: 15px;width: 230px;height: 35px; } 
+
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch #searchForm fieldset {border-style: none; } 
+
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch #searchForm fieldset .searchWrap {padding-top: 3px;padding-left: 5px; } 
+
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch #searchForm fieldset .searchWrap select {border-style: none;background: white;width: 70px;height: 30px;font-size: 14px; } 
+
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch #searchForm fieldset .searchWrap select:focus {border: 2px solid black;border-radius: 5px;font-size: 14px; } 
+
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch #searchForm fieldset .searchWrap .search {width: 90px;height: 30px;border: none; } 
+
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch #searchForm fieldset .searchWrap .search:focus {border-style: none;border: 2px solid black;border-radius: 5px; } 
+
+.header>.headerBottom>.headerBottomInner>.headerSearchBar>.headerSearch #searchForm fieldset .searchWrap>.searchBtn>img {width: 15px;height: 15px;margin-top: 2px;margin-left: 5px; } 
+
+/* 2depth 하단영역 */
+.twodepth_holding_nav{width: 100%; height: 50px; background-color: #c9e4ff; }
+.twodepth_holding_nav .twodepth_holding_nav_inner{width:1400px; height:50px; margin: 0 auto; }
+.twodepth_holding_nav .twodepth_holding_nav_inner .twodepth_holding_nav_top ul{display: inline-block; margin: 9px 0;}
+.twodepth_holding_nav .twodepth_holding_nav_inner .twodepth_holding_nav_top ul li{float: left; margin: 0 15px; }
+.twodepth_holding_nav .twodepth_holding_nav_inner .twodepth_holding_nav_top ul li a{padding: 0 10px; color: #353535}
+.twodepth_holding_nav .twodepth_holding_nav_inner .twodepth_holding_nav_top ul li a:hover{font-weight: 700; color:black;}
+.twodepth_holding_nav .twodepth_holding_nav_inner .twodepth_holding_nav_top ul li:first-child a{font-weight: 700; color:black; }
+
+.twodepth_holding_nav_bottom{background: #656163 url('https://www.nfa.go.kr/nfa/common/images/content/sub-title01.jpg') 50% 50% no-repeat; width: 100%; height: 230px; }
+.twodepth_holding_nav_bottom .twodepth_holding_nav_bottom_inner {width: 1400px; height: 230px; margin: 0 auto;position: relative;}
+
+.twodepth_holding_nav_bottom .twodepth_holding_nav_bottom_inner h2{color:white; font-size:40px; text-shadow: 1px 1px 2px #000; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
+.twodepth_holding_nav_bottom .twodepth_holding_nav_bottom_inner .util_btn {position:absolute; top:170px; right:60px; width:77px; height:31px; } 
+.twodepth_holding_nav_bottom .twodepth_holding_nav_bottom_inner .util_btn .btn_share{margin-right: 10px;width: 31px; height:31px; float: left;}
+.twodepth_holding_nav_bottom .twodepth_holding_nav_bottom_inner .util_btn .btn_share a{background: url('https://www.nfa.go.kr/nfa/common/images/common/icon_util.png') -100px 0 no-repeat; width:31px; height:31px; display: block;}
+.twodepth_holding_nav_bottom .twodepth_holding_nav_bottom_inner .util_btn .btn_print{width: 31px; height:31px; float: left;}
+.twodepth_holding_nav_bottom .twodepth_holding_nav_bottom_inner .util_btn .btn_print a{background: url('https://www.nfa.go.kr/nfa/common/images/common/icon_util.png') -150px 0 no-repeat; width:31px; height:31px; display: block; }
+
+.main_cli{width: 100%; height:auto;}
+.main_cli .daily_activities_area{width: 1400px; margin: 0 auto; height: 1600px;margin: 100px auto;}
+.main_cli .daily_activities_area .daily_activities_title{margin: 0 auto; width: 130px; height: 30px; border-bottom: 3px solid #000; text-align: center; margin-bottom:50px;}
+.main_cli .daily_activities_area .daily_activities_title a{font-size:17px; font-weight: 700;}
+
+.main_cli .daily_activities_area .daily_activities_notice{width: 100%; height: 1350px; }
+.main_cli .daily_activities_area .daily_activities_notice .notice_header{}
+.main_cli .daily_activities_area .daily_activities_notice .notice_header p{font-size:16px; font-weight: 700;}
