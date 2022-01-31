@@ -168,9 +168,15 @@ body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; }
 
 .main_cli{width: 100%; height:auto;}
 .main_cli .daily_activities_area{width: 1400px; margin: 0 auto; height: 1600px;margin: 100px auto;}
-.main_cli .daily_activities_area .daily_activities_title{margin: 0 auto; width: 130px; height: 30px; border-bottom: 3px solid #000; text-align: center; margin-bottom:50px;}
+.main_cli .daily_activities_area .daily_activities_title{margin: 0 auto; width: 130px; height: 30px; border-bottom: 3px solid #000; text-align: center; margin-bottom:100px;}
 .main_cli .daily_activities_area .daily_activities_title a{font-size:17px; font-weight: 700;}
 
 .main_cli .daily_activities_area .daily_activities_notice{width: 100%; height: 1350px; }
-.main_cli .daily_activities_area .daily_activities_notice .notice_header{}
-.main_cli .daily_activities_area .daily_activities_notice .notice_header p{font-size:16px; font-weight: 700;}
+.main_cli .daily_activities_area .daily_activities_notice .notice_header{width: 100%; display: block; height: 50px; border-bottom: 1px #dedede solid;}
+.main_cli .daily_activities_area .daily_activities_notice .notice_header span{font-size:16px; font-weight: 700; margin: 13px; display: inline-block;}
+.main_cli .daily_activities_area .daily_activities_notice .notice_header form{float: right; border: 1px solid #dedede; position: relative; display: block; width: 400px; z-index: 1;}
+.main_cli .daily_activities_area .daily_activities_notice .notice_header form select{border: none; height:45px; width:100px; appearance: none; background: url('https://www.nfa.go.kr/nfa/common/img/2018051118390764083.png') 90% 50% no-repeat; padding-left: 15px; color: gray; cursor: pointer; }
+
+.main_cli .daily_activities_area .daily_activities_notice .notice_header form input[type=search]{border: none; height:45px; width: 100%; position: absolute; top: 0; left: 0; padding:0 59px 0 101px; color: gray; z-index: -1;}
+.main_cli .daily_activities_area .daily_activities_notice .notice_header form button[type=submit]{border: none; background: url('../img/searchBtn.png') no-repeat; width: 25px; height: 25px; float: right; margin:10px; cursor: pointer;}
+

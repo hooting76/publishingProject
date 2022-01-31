@@ -365,7 +365,16 @@
                         </div>
                         <div class="daily_activities_notice">
                             <div class="notice_header">
-                                <p>전체 1651건</p>
+                                <span>전체 1651건</span>
+                                <form action="#" method="post" id="activities_search_area">
+                                    <select name="activities_search_op" id="activities_search_op">
+                                        <option value="title_index">제목+내용</option>
+                                        <option value="title">제목</option>
+                                        <option value="index">내용</option>
+                                    </select>
+                                    <input type="search" name="activities_search" id="activities_search">
+                                    <button type="submit" value="" id="activities_search_btn">
+                                </form>
                             </div>
                             <div class="notice_section"></div>
                             <div class="notice_bottom"></div>
