@@ -167,7 +167,7 @@ body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; }
 .twodepth_holding_nav_bottom .twodepth_holding_nav_bottom_inner .util_btn .btn_print a{background: url('https://www.nfa.go.kr/nfa/common/images/common/icon_util.png') -150px 0 no-repeat; width:31px; height:31px; display: block; }
 
 .main_cli{width: 100%; height:auto;}
-.main_cli .daily_activities_area{width: 1400px; margin: 0 auto; height: 1600px;margin: 100px auto;}
+.main_cli .daily_activities_area{width: 1400px; margin: 0 auto; height: 1600px;margin: 100px auto 0;}
 .main_cli .daily_activities_area .daily_activities_title{margin: 0 auto; width: 130px; height: 30px; border-bottom: 3px solid #000; text-align: center; margin-bottom:100px;}
 .main_cli .daily_activities_area .daily_activities_title a{font-size:16px; font-weight: 700;}
 
@@ -212,5 +212,106 @@ body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; }
 .section_bot .section_bot_inner{width: 100%; height: auto; margin: 10px; border: 1px solid #cacaca;}
 .section_bot_inner_title{width: 100%; height: 50px; background:#dedede; text-align:center; position: relative;}
 .section_bot_inner_title span{display:inline-block; margin-top: 10px;}
-.section_bot_inner_title a{ background: #fff url(''); border: 1px solid #6a6a6a;padding: 5px 5px 5px 10px; position: absolute; top: 6px; right: 12px;}
+.section_bot_inner_title a{ background: #fff; border: 1px solid #6a6a6a;padding: 5px 5px 5px 10px; position: absolute; top: 6px; right: 12px;}
 .section_bot_inner_title a img{transform: rotate(180deg); }
+
+.section_bot_main{width: 100%; height:220px; }
+.section_bot_main .section_bot_main_l{float: left; width: 48.3%; height:92%; border-right: 1px solid #cacaca; padding: 10px;}
+.section_bot_main .section_bot_main_l span{display:inline-block; width: 100%; height:auto; margin: o 10px; text-align:center;}
+.section_bot_main .section_bot_main_l span a strong{margin-left:10px;}
+.section_bot_main .section_bot_main_l span a strong:last-child{font-size: 27px;}
+
+.section_bot_main .section_bot_main_l .research_point{position:relative;}
+.section_bot_main .section_bot_main_l .research_point ol{width:100%; height:auto;}
+.section_bot_main .section_bot_main_l .research_point ol li{margin-bottom: 50px;}
+.section_bot_main .section_bot_main_l .research_point ol li label{width:19%; height:100%; display:inline-block; text-align:center;}
+.section_bot_main .section_bot_main_l .research_point ol li label:first-child::before{background:url('https://www.nfa.go.kr/nfa/common/images/common/ico_research.jpg') 50% 0 no-repeat; content: ''; height: 36px; width: 36px; display: block; margin: 20px 20px 20px 50px; cursor: pointer;} 
+.section_bot_main .section_bot_main_l .research_point ol li label:nth-child(2):before{background:url('https://www.nfa.go.kr/nfa/common/images/common/ico_research.jpg') 50% 0 no-repeat; content: ''; height: 36px; width: 36px; display: block; margin: 20px 20px 20px 50px; cursor: pointer; background-position: 0 -60px;} 
+.section_bot_main .section_bot_main_l .research_point ol li label:nth-child(3):before{background:url('https://www.nfa.go.kr/nfa/common/images/common/ico_research.jpg') 50% 0 no-repeat; content: ''; height: 36px; width: 36px; display: block; margin: 20px 20px 20px 50px; cursor: pointer; background-position: 0 -120px;} 
+.section_bot_main .section_bot_main_l .research_point ol li label:nth-child(4):before{background:url('https://www.nfa.go.kr/nfa/common/images/common/ico_research.jpg') 50% 0 no-repeat; content: ''; height: 36px; width: 36px; display: block; margin: 20px 20px 20px 50px; cursor: pointer; background-position: 0 -180px;} 
+.section_bot_main .section_bot_main_l .research_point ol li label:nth-child(5):before{background:url('https://www.nfa.go.kr/nfa/common/images/common/ico_research.jpg') 50% 0 no-repeat; content: ''; height: 36px; width: 36px; display: block; margin: 20px 20px 20px 50px; cursor: pointer; background-position: 0 -240px;} 
+
+
+
+.section_bot_main .section_bot_main_r{float: left; width: 47%; height:100%; padding:10px;}
+.section_bot_main .section_bot_main_r span{display: inline-block; margin: 10px; font-size: 21px;}
+.section_bot_main .section_bot_main_r p{margin-left: 10px; font-size:16px;}
+.section_bot_main .section_bot_main_r p strong{color:#3480c4;}
+
+.section_bot_main .section_bot_main_r .opinion_research{width: 100%; height:auto; margin-left: 10px; position:relative; margin-top: 15px;}
+.section_bot_main .section_bot_main_r .opinion_research .opinion_save{width: 77%; height:80px; background-color:#dadada; border: 1px solid #cacaca;}
+.section_bot_main .section_bot_main_r .opinion_research .opinion_btn{background:#3d3d3d; color:#fff; width:100px; height:83px;}
+
+
+/* 푸터영역 시작 */
+/* 푸터탑 */
+.footer{width: 100%; height: 208px; float: left; clear: both; margin-top: 20px;}
+.footer .footer_top{border-top: 1px solid #dadada; height: 103px; width: 100%;}
+.footer .footer_top .footer_top_first{width: 1400px; margin: 0 auto;  height: 103px; position: relative;}
+
+.footer .footer_top .footer_top_first .footer_remote{width: 92px; height: 50px; padding-top: 20px; float: left; margin-right: 18px;}
+.footer .footer_top .footer_top_first .footer_remote p{color: #333; margin-bottom: 5px; font-size: 17px; text-align:center;}
+.footer .footer_top .footer_top_first .footer_remote .footer_remote_btn1{background: url(https://www.nfa.go.kr/nfa/common/images/main/pre.gif) no-repeat; width: 25px; height: 25px; display: inline-block;margin-left: 4px;}
+.footer .footer_top .footer_top_first .footer_remote .footer_remote_btn2{background: url(https://www.nfa.go.kr/nfa/common/images/main/stop.gif) no-repeat; width: 25px; height: 25px; display: inline-block;}
+.footer .footer_top .footer_top_first .footer_remote .footer_remote_btn3{background: url(https://www.nfa.go.kr/nfa/common/images/main/next.gif) no-repeat; width: 25px; height: 25px; display: inline-block;}
+
+.footer .footer_top .footer_top_first .footer_banner {height: 55px; width: 1405px;}    
+.footer .footer_top .footer_top_first .footer_banner a{width: 175px; height: 55px; float: left; margin: 24px 5px; }    
+
+.footer .footer_top .footer_top_second_frame{width: 100%; height: 103px; border-top: 1px solid #dadada;}
+.footer .footer_top .footer_top_second_frame .footer_top_second{width: 1400px; margin: 0 auto;  height: 103px; position: relative;}
+.footer .footer_top .footer_top_second_frame .footer_top_second .footer_remote{width: 92px; height: 50px; padding-top: 20px; float: left; margin-right: 18px;}
+.footer .footer_top .footer_top_second_frame .footer_top_second .footer_remote p{color: #333; margin-bottom: 5px; font-size: 17px; text-align: center;}
+.footer .footer_top .footer_top_second_frame .footer_top_second .footer_remote .footer_remote_btn1{background: url(https://www.nfa.go.kr/nfa/common/images/main/pre.gif) no-repeat; width: 25px; height: 25px; display: inline-block;margin-left: 4px;}
+.footer .footer_top .footer_top_second_frame .footer_top_second .footer_remote .footer_remote_btn2{background: url(https://www.nfa.go.kr/nfa/common/images/main/stop.gif) no-repeat; width: 25px; height: 25px; display: inline-block;}
+.footer .footer_top .footer_top_second_frame .footer_top_second .footer_remote .footer_remote_btn3{background: url(https://www.nfa.go.kr/nfa/common/images/main/next.gif) no-repeat; width: 25px; height: 25px; display: inline-block;}
+
+.footer .footer_top .footer_top_second_frame .footer_top_second .footer_banner {height: 55px; width: 1405px;}    
+.footer .footer_top .footer_top_second_frame .footer_top_second .footer_banner a{width: 175px; height: 55px; float: left; margin: 24px 5px;}
+
+/* 푸터바텀 */
+.footer_bot{background: #292c34; width: 100%; font-size: 14px; padding: 30px 0; float: left; clear: both; }
+.footer_bot .footer_bot_frame{width: 1400px; margin: 0 auto; position: relative;}
+
+.footer_bot .footer_bot_frame .footer_menu{width: auto; height: 14px;}
+.footer_bot .footer_bot_frame .footer_menu ul li{float: left; margin: 20px 15px 20px 0;}
+.footer_bot .footer_bot_frame .footer_menu ul li a{color: #a8b1bd; font-size: 16px;font-weight: 700;}
+.footer_bot .footer_bot_frame .footer_menu ul li:first-child a{color: #fed300; }
+.footer_bot .footer_bot_frame .footer_menu ul li:hover a{color: #fed300; }
+
+.footer_bot .footer_bot_frame .sns_icon{float: left; width: auto; height: 40px; width: 284px;}
+.footer_bot .footer_bot_frame .sns_icon ul li{float: left; margin: 0 3px; padding: 0 2px;}
+.footer_bot .footer_bot_frame .sns_icon ul .facebook{background: url(../snsicon/ico_sns_list_2021.png) no-repeat; background-position: -38px 0; width: 36px; height: 40px; cursor: pointer;}
+.footer_bot .footer_bot_frame .sns_icon ul .twitter{background: url(../snsicon/ico_sns_list_2021.png) no-repeat; background-position: -81px 0; width: 36px; height: 40px; cursor: pointer;}
+.footer_bot .footer_bot_frame .sns_icon ul .youtube{background: url(../snsicon/ico_sns_list_2021.png) no-repeat; background-position: -159px 0; width: 38px; height: 40px; cursor: pointer;}
+.footer_bot .footer_bot_frame .sns_icon ul .instagram{background: url(../snsicon/ico_sns_list_2021.png) no-repeat; background-position: 1px 0; width: 38px; height: 40px; cursor: pointer;}
+.footer_bot .footer_bot_frame .sns_icon ul .blog{background: url(../snsicon/ico_sns_list_2021.png) no-repeat; background-position: -119px 0; width: 38px; height: 40px; cursor: pointer;}
+.footer_bot .footer_bot_frame .sns_icon ul .plusfriend{background: url(../snsicon/ico_sns_list_2021.png) no-repeat; background-position: -199px 0; width: 38px; height: 40px; cursor: pointer;}
+
+.related_site{ width: 500px; height: 49px; float: right; position: absolute; top: 10px; right: -14px;}
+.related_site .related_site_frame{width: 100%; height: 100%;}
+.related_site .related_site_frame button{width: 48%; height: 100%; border: 1px solid #dadada; background: #292c34; cursor: pointer;}
+.related_site .related_site_frame button p:after{content: '›'; float: right; font-size: 18px; transform: rotate(90deg);}
+.related_site .related_site_frame button:hover{background: lightgray; }
+.related_site .related_site_frame button:hover p{color: black;}
+.related_site .related_site_frame button p{color: #fff; text-align: left; margin: 5px 10px;}
+
+.related_site .related_site_frame #downtown_fire{margin-right: 2px;}
+.related_site .related_site_frame #local_fire{}
+
+.related_site #link_list_box1{height: 263px; overflow-y: scroll; display: none; background: #fff; position: absolute; top: -215px; left: 0; width: 240px; }
+.related_site #link_list_box1 ul{padding: 10px 10px; position: relative;}
+.related_site #link_list_box1 ul li{padding: 5px 0;}
+.related_site #link_list_box1>ul>a{position: absolute; top: 0; right: 5px; height:20px; width: 20px; color: black; font-size: 20px;}
+
+.related_site #link_list_box2{height: 263px; overflow-y: scroll; display: none; background: #fff; position: absolute; top: -215px; right: 15px; width: 240px; }
+.related_site #link_list_box2 ul{padding: 10px 10px; position: relative;}
+.related_site #link_list_box2 ul li{padding: 5px 0;}
+.related_site #link_list_box2>ul>a{position: absolute; top: 0; right: 5px; height:20px; width: 20px; color: black; font-size: 20px;}
+
+/* 최하단 */
+address{float: left; margin:15px 0; color:#a8b1bd;}
+address p{color: #7f8085;}
+.footer_etc_banner{float: right; width: 200px; height: 50px; margin-top: 15px;}
+.rm{margin-right: 10px;}
+
