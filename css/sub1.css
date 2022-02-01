@@ -169,7 +169,7 @@ body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; }
 .main_cli{width: 100%; height:auto;}
 .main_cli .daily_activities_area{width: 1400px; margin: 0 auto; height: 1600px;margin: 100px auto;}
 .main_cli .daily_activities_area .daily_activities_title{margin: 0 auto; width: 130px; height: 30px; border-bottom: 3px solid #000; text-align: center; margin-bottom:100px;}
-.main_cli .daily_activities_area .daily_activities_title a{font-size:17px; font-weight: 700;}
+.main_cli .daily_activities_area .daily_activities_title a{font-size:16px; font-weight: 700;}
 
 .main_cli .daily_activities_area .daily_activities_notice{width: 100%; height: 1350px; }
 .main_cli .daily_activities_area .daily_activities_notice .notice_header{width: 100%; display: block; height: 50px; border-bottom: 1px #dedede solid;}
@@ -180,3 +180,37 @@ body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; }
 .main_cli .daily_activities_area .daily_activities_notice .notice_header form input[type=search]{border: none; height:45px; width: 100%; position: absolute; top: 0; left: 0; padding:0 59px 0 101px; color: gray; z-index: -1;}
 .main_cli .daily_activities_area .daily_activities_notice .notice_header form button[type=submit]{border: none; background: url('../img/searchBtn.png') no-repeat; width: 25px; height: 25px; float: right; margin:10px; cursor: pointer;}
 
+.notice_section{width:100%; height: auto;}
+.notice_section .section_top{width: 100%; height: 50px; border-bottom: 3px solid #000;}
+.notice_section .section_top span{font-weight: bold; white-space: nowrap; height:50px; text-align: center; display:inline-block; margin-top:10px; }
+.notice_section .section_top span:not(:nth-child(2)){width: 10%;}
+.notice_section .section_top span:nth-child(2){width: 46%;}
+
+.notice_section .section_main{width: 100%; height: auto; margin-bottom: 90px;}
+.notice_section .section_main .section_line_by{width: 100%; height:60px; border-bottom: 1px solid #dedede; position: relative;} 
+.notice_section .section_main .section_line_by span{margin-top: 10px; display: inline-block; text-align: center;}
+.notice_section .section_main .section_line_by span:not(:nth-child(2)){width: 10%;}
+.notice_section .section_main .section_line_by span:nth-child(2){width: 46%; text-align: left;}
+.notice_section .section_main .section_line_by span:nth-child(2):hover a{text-decoration:underline; color:#3480c4;}
+.notice_section .section_main .section_line_by span:nth-child(3):hover .hover_hotline{display: block;}
+
+.hover_hotline{width:130px; height:60px; background:lightskyblue; border-radius: 5px; display: none; position: absolute; top:0; right:340px;}
+.hover_hotline p{ font-size: 16px; margin: 3px;}
+
+.notice_section .section_main .section_line_by span:nth-child(5){margin-right: 27px;}
+.notice_section .section_main .section_line_by span:last-child{background: url('https://www.nfa.go.kr/board/_common/img/nfa/icon_file.png') no-repeat top right; width: 22px; height: 28px;margin-left: 30px; }
+
+.notice_section .section_main .section_bot_nav{width:100%; height: 20px; position:relative; margin-top:15px;}
+.notice_section .section_main .section_bot_nav ul{margin: 0 auto; display: inline-block; position: absolute; top:0; left:50%; transform: translateX(-50%)} 
+.notice_section .section_main .section_bot_nav ul li{float: left; width:25px; height:25px; border: 1px solid #dadada; border-radius: 25px; text-align: center;}
+.notice_section .section_main .section_bot_nav ul li:nth-child(3){background-color: #6a6a6a; }
+.notice_section .section_main .section_bot_nav ul li:nth-child(3) a{color: #fff; font-weight: bold;}
+.notice_section .section_main .section_bot_nav ul li:hover{background-color: #6a6a6a;}
+.notice_section .section_main .section_bot_nav ul li:hover a{color: #fff; font-weight: bold;}
+
+.section_bot{width: 100%; height: auto;}
+.section_bot .section_bot_inner{width: 100%; height: auto; margin: 10px; border: 1px solid #cacaca;}
+.section_bot_inner_title{width: 100%; height: 50px; background:#dedede; text-align:center; position: relative;}
+.section_bot_inner_title span{display:inline-block; margin-top: 10px;}
+.section_bot_inner_title a{ background: #fff url(''); border: 1px solid #6a6a6a;padding: 5px 5px 5px 10px; position: absolute; top: 6px; right: 12px;}
+.section_bot_inner_title a img{transform: rotate(180deg); }
