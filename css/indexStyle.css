@@ -378,7 +378,7 @@ body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; }
 
 .main_mid .main_mid_inner .alignCenterMid .etcInfo .etcInfoMain #jobMain .mainSub { } 
 
-.main_mid .main_mid_inner .alignCenterMid .etcInfo .etcInfoMain #jobMain .mainSub ul {padding-top: 20px; } 
+.main_mid .main_mid_inner .alignCenterMid .etcInfo .etcInfoMain #jobMain .mainSub ul {padding-top: 20px; font-size: 14px; } 
 
 .main_mid .main_mid_inner .alignCenterMid .etcInfo .etcInfoMain #jobMain .mainSub ul li {width: 400px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin-bottom: 10px; } 
 
