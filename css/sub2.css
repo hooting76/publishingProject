@@ -208,7 +208,7 @@ body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; }
 .communication_right .pic_title:nth-child(5){position: absolute; bottom: 25px; left: 47px; font-size:14px; text-align:center;}
 .communication_right .pic_title:nth-child(6){position: absolute; bottom: 25px; left: 345px; font-size:14px; text-align:center;}
 .communication_right .pic_title:nth-child(7){position: absolute; bottom: 25px; left: 625px; font-size:14px; text-align:center;}
-.pic_title p{font-size:5px;}
+.pic_title p{font-size:12px;}
 
 .section_bot{width: 100%; height: auto;}
 .section_bot .section_bot_inner{width: 100%; height: auto; margin: 10px;}
