@@ -178,6 +178,18 @@ body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; }
 .main_cli .main_cli_inner .inner_top_title .first_title{font-size: 16px; color:#333; font-weight: bold; border-bottom: 3px solid #333; display: inline-block; padding-bottom: 3px;}
 .main_cli .main_cli_inner .inner_top_title a:not(:first-child):hover{font-size: 16px; color:#333; font-weight: bold; border-bottom: 3px solid #333; display: inline-block; padding-bottom: 3px;}
 
+.main_cli .sub_title_area{width: 100%; height: auto; }
+.main_cli .sub_title_area .sub_title{ width: 1300px; height: 49px; margin: 0 auto;  }
+.main_cli .sub_title_area .sub_title li{ width: 24.4%; height: 48px; float: left; text-align: center; border: 1px solid #dadada;}
+.main_cli .sub_title_area .sub_title li a{display: block; padding: 10px; color: #6a6a6a;}
+.main_cli .sub_title_area .sub_title li:not(:first-child):hover a{background-color: #6a6a6a; color: #fff;}
+.main_cli .sub_title_area .sub_title li:first-child a{background-color: #6a6a6a; color: #fff;}
+
+.main_cli .switching_btn{width: 100%; height: 50px; margin: 0 auto;}
+.main_cli .switching_btn .s_btn1{}
+.main_cli .switching_btn .s_btn2{}
+
+
 .section_bot{width: 100%; height: auto;}
 .section_bot .section_bot_inner{width: 100%; height: auto; margin: 10px; border: 1px solid #cacaca;}
 .section_bot_inner_title{width: 100%; height: 50px; background:#dedede; text-align:center; position: relative;}
