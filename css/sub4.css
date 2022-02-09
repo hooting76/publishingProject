@@ -168,7 +168,31 @@ body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; }
 
 /* 본문 */
 .main_cli{width: 100%; height:auto;}
-.main_cli .daily_activities_area{width: 1400px; margin: 0 auto; height: auto;margin: 100px auto 0;}
+.main_cli .daily_activities_area{width: 1400px; margin: 0 auto; height: auto;margin: 50px auto 0;}
+.main_cli .main_cli_inner{width: 100%; height:auto; margin: 0 auto;}
+.main_cli .main_cli_inner .inner_top_title{width: 100%; height: 40px; text-align: center; margin-bottom: 100px;}
+.main_cli .main_cli_inner .inner_top_title a{font-size: 16px; color:#6a6a6a; display: inline-block;}
+.main_cli .main_cli_inner .inner_top_title span:not(:first-child)::before{background: url('https://www.nfa.go.kr/nfa/common/images/common/menu-gubun.png') no-repeat; content: ''; display: inline-block; width: 11px; height: 16px;}
+.main_cli .main_cli_inner .inner_top_title .first_title{font-size: 16px; color:#333; font-weight: bold; border-bottom: 3px solid #333; display: inline-block; padding-bottom: 3px;}
+.main_cli .main_cli_inner .inner_top_title a:not(:first-child):hover{font-size: 16px; color:#333; font-weight: bold; border-bottom: 3px solid #333; display: inline-block; padding-bottom: 3px;}
+
+.openInfoNotice{width: 1350px; height: 220px; padding: 50px 0 50px 50px;border: 1px solid #888; background-color: #eee; margin-bottom: 60px;}
+.openInfoNotice .openInfoNotice_area{width: 100%; height: 100%;}
+.openInfoNotice .openInfoNotice_area h1{font-size: 30px; font-weight: 400; margin-bottom: 45px; color: #398992; padding-top: 35px;}
+.openInfoNotice .openInfoNotice_area p{font-size: 18px; color: #333; font-weight: 300;}
+.openInfoNotice .openInfoNotice_area::before{content: ''; background: url(https://www.nfa.go.kr/nfa/common/images/content/officiallist.png) no-repeat 75%; width: 30%; height: 100%;  display: block; float: left;}
+
+.detail_cs{background: #C12F29; width: 33%; margin-bottom: 20px;}
+.detail_cs a{color: #fdd400; padding: 10px; display: block;}
+.detail_cs a::after{background: url(https://www.nfa.go.kr/nfa/common/images/common/link_icon.png) no-repeat; content: ''; width: 6px; height: 10px; display: inline-block; margin-left: 15px; margin-bottom: 2px;}
+.detail_cs a span{color: #fff;}
+
+.nb_btn{height: 200px; width: 102%; text-align: center;}
+.nb_btn li{border: 1px solid #555; width: 19.5%; float: left; height: auto; margin: 0;}
+.nb_btn li button{width: 100%; height: 100%; display: block; padding:20px 30px; font-size: 18px; font-weight: 700; background-color: #fff; cursor: pointer;}
+.nb_btn li:first-child button{background-color: #313131; color: #fff;}
+.nb_btn li button:hover{background-color: #313131; color: #fff;}
+
 
 .section_bot{width: 100%; height: auto;}
 .section_bot .section_bot_inner{width: 100%; height: auto; margin: 10px; border: 1px solid #cacaca;}
