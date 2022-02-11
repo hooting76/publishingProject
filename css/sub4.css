@@ -202,24 +202,26 @@ body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; }
 .notice_section .section_top span:nth-child(7){width: 10%;}
 
 .notice_section .section_main{width: 100%; height: auto; margin-bottom: 90px;}
-.notice_section .section_main .section_line_by{width: 100%; height:60px; border-bottom: 1px solid #dedede; position: relative;} 
+.notice_section .section_main .section_line_by{width: 100%; height:55px; border-bottom: 1px solid #dedede; position: relative;} 
 .notice_section .section_main .section_line_by span{margin-top: 10px; display: inline-block; text-align: center; font-size: 18px; width: 5%;}
 .notice_section .section_main .section_line_by span:nth-child(2){width: 45%; text-align: left;}
 .notice_section .section_main .section_line_by span:nth-child(5){width: 15%; text-align: center ;}
 .notice_section .section_main .section_line_by span:nth-child(6){width: 6%; text-align: left;  }
 .notice_section .section_main .section_line_by span:nth-child(7){width: 10%; text-align: left;}
-.notice_section .section_main .section_line_by .clip_etc{background: url('https://www.nfa.go.kr/board/_common/img/nfa/icon_file.png') no-repeat 30px center; height: 50%; position: absolute;}
-.notice_section .section_main .section_line_by a {}
-.notice_section .section_main .section_line_by a .link{background: url('https://www.nfa.go.kr/nfa/common/images/common/gnb_blank.gif')no-repeat; width: 13px; height: 13px; text-align: center; position: absolute; left: 50%;}
-
+.notice_section .section_main .section_line_by .clip_etc{background: url('https://www.nfa.go.kr/board/_common/img/nfa/icon_file.png') no-repeat 30px center; height: 50%; position: absolute; }
+.notice_section .section_main .section_line_by>a {display: inline-block; width: 5%; text-align: center;margin-left: 150px;}
+.notice_section .section_main .section_line_by a .link{background: url('https://www.nfa.go.kr/nfa/common/images/common/gnb_blank.gif')no-repeat; width: 13px; height: 13px; text-align: right; }
 
 .notice_section .section_main .section_line_by span:nth-child(2):hover a{text-decoration:underline; color:#3480c4;}
-
-
-.hover_hotline{width:130px; height:60px; background:lightskyblue; border-radius: 5px; display: none; position: absolute; top:0; right:340px;}
-.hover_hotline p{ font-size: 16px; margin: 3px;}
-
 .notice_section .section_main .section_line_by span:nth-child(5){margin-right: 27px;}
+.notice_section .section_main .section_bot_nav{width:100%; height: 20px; position:relative; margin-top:15px;}
+.notice_section .section_main .section_bot_nav ul{margin: 0 auto; display: inline-block; position: absolute; top:0; left:50%; transform: translateX(-50%);} 
+.notice_section .section_main .section_bot_nav ul li{float: left; width:25px; height:25px; border: 1px solid #dadada; border-radius: 25px; text-align: center;}
+.notice_section .section_main .section_bot_nav ul li:nth-child(1){background-color: #6a6a6a; }
+.notice_section .section_main .section_bot_nav ul li:nth-child(1) a{color: #fff; font-weight: bold;}
+.notice_section .section_main .section_bot_nav ul li:hover{background-color: #6a6a6a;}
+.notice_section .section_main .section_bot_nav ul li:hover a{color: #fff; font-weight: bold;}
+
 
 
 .section_bot{width: 100%; height: auto;}
