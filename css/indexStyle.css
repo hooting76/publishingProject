@@ -52,27 +52,33 @@ body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; }
 
 /* sns아이콘 */
 
-.header>.headerTop>.headerTopInner>.headerTopRight {width: 330px;height: 30px; } 
+.header>.headerTop>.headerTopInner>.headerTopRight {width: auto; height: 35px; position: absolute; top: 10px; right: 0; text-align: center; } 
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon {width: 30px; height: 30px; float: left; cursor: pointer; margin: 1px 0;} 
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:not(:last-child) {border-radius: 50%; } 
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:not(:first-child){margin-left: 5px;} 
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon>a {width: 100%; height: 100%; font-size: 0;text-align: center;} 
 
-.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:not(:last-child) a img {width: 30px;height: 30px; } 
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsFacebook {background: #4d6ea6;} 
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsFacebook::before {font-family: "FontAwesome";
+    content: '\f09a'; margin-left: 5px; color: #fff;}
 
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsTwit {background: #1db7e9;} 
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsTwit::before {font-family: "FontAwesome";
+    content: '\f099'; color: #fff;}
 
-/* sns아이콘 위치조정 */
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsYoutube {background: #C12F29;} 
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsYoutube::before {font-family: "FontAwesome";
+    content: '\f167'; color: #fff;}
 
-.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:nth-child(7) {position: absolute;top: 10px;right: 0px;width: 96px;height: 34px; } 
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsInsta {background: #3a6188;} 
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsInsta::before {font-family: "FontAwesome";
+    content: '\f16d'; color: #fff;}
 
-.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:nth-child(6) {position: absolute;top: 10px;right: 96px;width: 30px;height: 30px;scale: 1.5; } 
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsBlog {background: #01c73c url(https://www.nfa.go.kr/nfa/common/images/common/sns_blog.png) 50% 50% no-repeat; background-size: cover;} 
 
-.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:nth-child(5) {position: absolute;top: 12px;right: 132px;width: 30px;height: 30px; } 
+.header>.headerTop>.headerTopInner>.headerTopRight>.snsPlusFriend {background: #3c1e1e url(https://www.nfa.go.kr/nfa/common/img/2018050213384662317.png) 50% 50% no-repeat; background-size: cover;} 
 
-.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:nth-child(4) {position: absolute;top: 12px;right: 168px;width: 30px;height: 30px; } 
-
-.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:nth-child(3) {position: absolute;top: 12px;right: 214px;width: 30px;height: 30px; } 
-
-.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:nth-child(2) {position: absolute;top: 12px;right: 250px;width: 30px;height: 30px; } 
-
-.header>.headerTop>.headerTopInner>.headerTopRight>.snsicon:nth-child(1) {position: absolute;top: 12px;right: 286px;width: 30px;height: 30px; } 
-
+.header>.headerTop>.headerTopInner>.headerTopRight>.Na_Meaning{width: 100px; background: url(http://www.nfa.go.kr/nfa/common/img/2021051114110087581.jpg) no-repeat; background-size: cover; height: 35px;} 
 
 /* 해드바텀 위치조정 */
 
@@ -456,14 +462,33 @@ body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; }
 .footer_bot .footer_bot_frame .footer_menu ul li:first-child a{color: #fed300; }
 .footer_bot .footer_bot_frame .footer_menu ul li:hover a{color: #fed300; }
 
-.footer_bot .footer_bot_frame .sns_icon{float: left; width: auto; height: 40px; width: 284px;}
-.footer_bot .footer_bot_frame .sns_icon ul li{float: left; margin: 0 3px; padding: 0 2px;}
-.footer_bot .footer_bot_frame .sns_icon ul .facebook{background: url(../snsicon/ico_sns_list_2021.png) no-repeat; background-position: -38px 0; width: 36px; height: 40px; cursor: pointer;}
-.footer_bot .footer_bot_frame .sns_icon ul .twitter{background: url(../snsicon/ico_sns_list_2021.png) no-repeat; background-position: -81px 0; width: 36px; height: 40px; cursor: pointer;}
-.footer_bot .footer_bot_frame .sns_icon ul .youtube{background: url(../snsicon/ico_sns_list_2021.png) no-repeat; background-position: -159px 0; width: 38px; height: 40px; cursor: pointer;}
-.footer_bot .footer_bot_frame .sns_icon ul .instagram{background: url(../snsicon/ico_sns_list_2021.png) no-repeat; background-position: 1px 0; width: 38px; height: 40px; cursor: pointer;}
-.footer_bot .footer_bot_frame .sns_icon ul .blog{background: url(../snsicon/ico_sns_list_2021.png) no-repeat; background-position: -119px 0; width: 38px; height: 40px; cursor: pointer;}
-.footer_bot .footer_bot_frame .sns_icon ul .plusfriend{background: url(../snsicon/ico_sns_list_2021.png) no-repeat; background-position: -199px 0; width: 38px; height: 40px; cursor: pointer;}
+/* 푸터 sns버튼 */
+.footer>.footer_bot>.footer_bot_frame>.sns_icon{width: auto; height: 35px; text-align: center;} 
+.footer>.footer_bot>.footer_bot_frame>.sns_icon>ul{width: auto; height: 30px; float: left; cursor: pointer; margin: 1px 0;} 
+.footer>.footer_bot>.footer_bot_frame>.sns_icon>ul>li {width: 30px; height: 100%; font-size: 0;text-align: center; border-radius: 50%; font-size: 18px; float: left; } 
+.footer>.footer_bot>.footer_bot_frame>.sns_icon>ul>li {margin-left: 5px;} 
+
+.footer>.footer_bot>.footer_bot_frame>.sns_icon>ul>li.facebook {background: #4d6ea6;} 
+.footer>.footer_bot>.footer_bot_frame>.sns_icon>ul>li.facebook::before {font-family: "FontAwesome";
+    content: '\f09a'; margin-left: 5px; color: #fff;}
+
+.footer>.footer_bot>.footer_bot_frame>.sns_icon>ul>li.twitter {background: #1db7e9;;} 
+.footer>.footer_bot>.footer_bot_frame>.sns_icon>ul>li.twitter::before {font-family: "FontAwesome";
+    content: '\f099'; color: #fff;}
+
+.footer>.footer_bot>.footer_bot_frame>.sns_icon>ul>li.youtube {background: #C12F29;;} 
+.footer>.footer_bot>.footer_bot_frame>.sns_icon>ul>li.youtube::before {font-family: "FontAwesome";
+    content: '\f167'; color: #fff;}
+
+.footer>.footer_bot>.footer_bot_frame>.sns_icon>ul>li.instagram {background: #3a6188;;} 
+
+.footer>.footer_bot>.footer_bot_frame>.sns_icon>ul>li.instagram::before {font-family: "FontAwesome";
+    content: '\f16d'; color: #fff;}
+
+.footer>.footer_bot>.footer_bot_frame>.sns_icon>ul>li.blog {background: #01c73c url(https://www.nfa.go.kr/nfa/common/images/common/sns_blog.png) 50% 50% no-repeat; background-size: cover;}
+.footer>.footer_bot>.footer_bot_frame>.sns_icon>ul>li.plusfriend {background: #3c1e1e url(https://www.nfa.go.kr/nfa/common/img/2018050213384662317.png) 50% 50% no-repeat; background-size: cover;}
+    
+
 
 .related_site{ width: 500px; height: 49px; float: right; position: absolute; top: 10px; right: -14px;}
 .related_site .related_site_frame{width: 100%; height: 100%;}
