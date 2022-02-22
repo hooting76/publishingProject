@@ -1,9 +1,46 @@
 // 메인배너 기능
+// 자동재생
+$('.banner_inner>ul').each(function(){
+    let count;
+    let container = $(this);
+
+    switchingImg();
+    function switchingImg(){
+        count = setInterval(function switchingImg(){
+            let imgs =container.find('>li');
+            // console.log(imgs);
+            let first = imgs.eq(0);
+            let second = imgs.eq(1);
+            
+            first.fadeOut().appendTo(container);
+            second.fadeIn();
+        },4000);
+    };
+    container.hover(function(){
+        clearInterval(count);
+    },function(){
+        switchingImg();
+    });
+});
+// arr_btn
+let move = $('.banner_inner>ul');
+let arrowRight = $('.right_Btn');
+let arrowLeft = $('.left_Btn');
+let timer;
 
 
+arrowRight.click(function(){
+    move.fadeOut(500,function(){
+        $(this).children('li:first').insertAfter($(this).children('li:last'));
+        $(this).css({left:0});
+    });
+    move.fadeIn();
+});
 
-
-
+arrowLeft.click(function(){
+    move.find('li:last').insertBefore(move.find('li:first'));
+    move.css({left:-liWidth}).stop().animate({left:0},500);
+}); 
 
 
 
