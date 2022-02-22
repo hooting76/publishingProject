@@ -106,26 +106,23 @@ body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; }
 
 /* 배너 슬라이드 이미지 */
 .banner_inner {position: relative; } 
-.banner_inner ul {width: 100%;height: 100%;margin: 0 auto; } 
+.banner_inner ul {width: 100%;height: 100%;margin: 0 auto; position: relative; overflow: hidden;} 
 .banner_inner ul:after {content: "";display: block; } 
 
-/* 배너 양옆 화살표버튼 <- js 미구현상태*/
-.banner_inner .left_Btn {position: absolute;background: none;top: 50%;width: 20px;height: 39px;z-index: 5;margin-top: -25px;left: 35px; } 
-.banner_inner .right_Btn {position: absolute;background: none;top: 50%;width: 20px;height: 39px;z-index: 5;margin-top: -25px;right: 35px; } 
+/* 배너 양옆 화살표버튼 */
+.banner_inner .left_Btn {position: absolute;background: none;top: 50%;width: 20px;height: 39px;z-index: 6;margin-top: -25px;left: 35px; } 
+.banner_inner .right_Btn {position: absolute;background: none;top: 50%;width: 20px;height: 39px;z-index: 6;margin-top: -25px;right: 35px; } 
 
 /* 배너 이미지 */
-.banner_inner ul li {float: left;width: 1400px;height: 100%;font-size: 18px; } 
-.banner_inner ul li:nth-child(1) {background: url(../img/메인베너.jpg) no-repeat; } 
-.banner_inner ul li:nth-child(2) {background: url(https://www.nfa.go.kr/nfa/common/images/main/img_01.jpg) no-repeat; } 
-.banner_inner ul li:nth-child(3) {background: url(https://www.nfa.go.kr/nfa/common/images/main/img_02.jpg) no-repeat; } 
+.banner_inner ul li {float: left;width: 1400px;height: 100%;font-size: 18px; overflow: hidden;} 
+.banner_inner ul li:nth-child(1) {z-index: 5; position: relative;} 
+.banner_inner ul li img {width: auto; height: auto; position: relative;} 
 
 /* 배너내의 하단 선택버튼 */
-.banner_inner input {display: none; } 
-.banner_inner label {display: inline-block;vertical-align: middle;width: 15px;height: 15px;border: 2px solid #fff;background: rgba(0, 0, 0, 0);border-radius: 50%;cursor: pointer;margin-right: 20px;margin-bottom: 34px; } 
-.banner_inner .pos {text-align: center;position: absolute;bottom: 10px;left: 0;width: 100%; } 
+
 
 /* 배너이미지 내의 텍스트 관련 */
-.banner_inner ul li .slo {display: block;margin-left: 56%;margin-top: 5%; } 
+.banner_inner ul li .slo {display: block; margin-left: 56%;margin-top: 5%; position: absolute; top: 50px; right: 100px; z-index: 3;} 
 
 /* 2번째이미지 */
 .banner_inner ul li .slo:first-child {text-align: left;color: #fff;font-size: 2.5em;letter-spacing: -1px;font-weight: 300;text-shadow: 2px 2px #525966; } 
