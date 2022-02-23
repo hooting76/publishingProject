@@ -1,46 +1,80 @@
 // 메인배너 기능
-// 자동재생
-$('.banner_inner>ul').each(function(){
-    let count;
-    let container = $(this);
-
-    switchingImg();
-    function switchingImg(){
-        count = setInterval(function switchingImg(){
-            let imgs =container.find('>li');
-            // console.log(imgs);
-            let first = imgs.eq(0);
-            let second = imgs.eq(1);
-            
-            first.fadeOut().appendTo(container);
-            second.fadeIn();
-        },4000);
-    };
-    container.hover(function(){
-        clearInterval(count);
-    },function(){
-        switchingImg();
-    });
-});
-// arr_btn
-let move = $('.banner_inner>ul');
+// 자동재생 + 양쪽arr버튼(하단버튼 미완 / 페이지 이동에 따라 css변환 추가+ 하단 버튼 클릭시 이동은 아직 미구현)
+let moving = $('.banner_inner>ul');
+let timer;
+let wid=moving.find('li').width();
 let arrowRight = $('.right_Btn');
 let arrowLeft = $('.left_Btn');
-let timer;
+let current=0;
+let pager=$('.pager span');
+// console.log(wid); 
 
+pager.eq(0).addClass('on');
 
-arrowRight.click(function(){
-    move.fadeOut(500,function(){
-        $(this).children('li:first').insertAfter($(this).children('li:last'));
-        $(this).css({left:0});
-    });
-    move.fadeIn();
+slide();
+function slide(){
+    timer = setInterval(function(){
+        moving.fadeOut(500, function(){
+            $(this).find('li:first').insertAfter($(this).find('li:last'));
+            $(this).fadeIn().css({left:0});
+
+            current++;
+            $(this).find('.pager').find('span').removeClass('on').eq(current).addClass('on');
+            if(current==pager.size()){current=0; pager.eq(0).addClass('on')};
+        });
+    },4000);
+};
+
+$(moving).hover(function(){
+    clearInterval(timer);
+},function(){
+    slide();
+});
+$(arrowRight).hover(function(){
+    clearInterval(timer);
+},function(){
+    slide();
+});
+$(arrowLeft).hover(function(){
+    clearInterval(timer);
+},function(){
+    slide();
 });
 
-arrowLeft.click(function(){
-    move.find('li:last').insertBefore(move.find('li:first'));
-    move.css({left:-liWidth}).stop().animate({left:0},500);
+// 양쪽 arr버튼 관련
+$(arrowRight).click(function(){
+    moving.fadeOut(500, function(){
+        $(this).find('li:first').insertAfter($(this).find('li:last'));
+        $(this).fadeIn().css({left:0});
+
+        current++;
+        $(this).find('.pager').find('span').removeClass('on').eq(current).addClass('on');
+        if(current==pager.size()){current=0; pager.eq(0).addClass('on')};
+    });
+});
+$(arrowLeft).click(function(){
+    moving.fadeOut(function(){
+        moving.find('li:last').insertBefore(moving.find('li:first'));
+        moving.fadeIn().css({left:0});
+
+        current--;
+        $(this).find('.pager').find('span').removeClass('on').eq(current).addClass('on');
+        if(current==-pager.size()){current=0; pager.eq(0).addClass('on')};
+    });
 }); 
+
+// 배너 하단 버튼 관련
+
+slideDotBtn()
+function slideDotBtn(){
+    let dotBtns = $('.pager span');
+    
+    if(dotBtns.className() =="on"){
+        return false;
+    }else{
+        
+    }
+};
 
 
 
