@@ -340,3 +340,7 @@ address p{color: #7f8085;}
 .footer_etc_banner{float: right; width: 200px; height: 50px; margin-top: 15px;}
 .rm{margin-right: 10px;}
 
+/* back to top */
+#back_to_top{position: fixed; bottom: 3em; right: 2em; background: rgba(255, 255, 255, .9); color: #313943; border-radius: 5px; cursor: pointer; text-transform: uppercase; transition: .3s; text-decoration: none; font-size: .75em; padding: 1em; display: inline-block;opacity: 0; border: 1px solid #666;}
+#back_to_top:hover{background-color: #fff; padding: 1em 1em;}
+#back_to_top.visible{opacity: 1;}

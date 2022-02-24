@@ -208,9 +208,10 @@ body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; }
 .notice_section .section_main .section_line_by span:nth-child(5){width: 15%; text-align: center ;}
 .notice_section .section_main .section_line_by span:nth-child(6){width: 6%; text-align: left;  }
 .notice_section .section_main .section_line_by span:nth-child(7){width: 10%; text-align: left;}
-.notice_section .section_main .section_line_by .clip_etc{background: url('https://www.nfa.go.kr/board/_common/img/nfa/icon_file.png') no-repeat 30px center; height: 50%; position: absolute; }
-.notice_section .section_main .section_line_by>a {display: inline-block; width: 5%; text-align: center;margin-left: 150px;}
+.notice_section .section_main .section_line_by .clip_etc{background: url('https://www.nfa.go.kr/board/_common/img/nfa/icon_file.png') no-repeat 30px center; height: 50%;}
+.notice_section .section_main .section_line_by>a {display: inline-block; width: 5%; text-align: center;margin-left: 65px;}
 .notice_section .section_main .section_line_by a .link{background: url('https://www.nfa.go.kr/nfa/common/images/common/gnb_blank.gif')no-repeat; width: 13px; height: 13px; text-align: right; }
+
 
 .notice_section .section_main .section_line_by span:nth-child(2):hover a{text-decoration:underline; color:#3480c4;}
 .notice_section .section_main .section_line_by span:nth-child(5){margin-right: 27px;}

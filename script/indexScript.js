@@ -1,11 +1,11 @@
 // 메인배너 기능
 // 자동재생 + 양쪽arr버튼(하단버튼 미완 / 페이지 이동에 따라 css변환 추가+ 하단 버튼 클릭시 이동은 아직 미구현)
 let moving = $('.banner_inner>ul');
-let timer;
-let wid=moving.find('li').width();
+let moving2 = $('.banner_inner ul li');
 let arrowRight = $('.right_Btn');
 let arrowLeft = $('.left_Btn');
 let current=0;
+let timer;
 let pager=$('.pager span');
 // console.log(wid); 
 
@@ -14,69 +14,104 @@ pager.eq(0).addClass('on');
 slide();
 function slide(){
     timer = setInterval(function(){
-        moving.fadeOut(500, function(){
-            $(this).find('li:first').insertAfter($(this).find('li:last'));
-            $(this).fadeIn().css({left:0});
-
-            current++;
-            $(this).find('.pager').find('span').removeClass('on').eq(current).addClass('on');
-            if(current==pager.size()){current=0; pager.eq(0).addClass('on')};
-        });
+        let prev = moving2.eq(current);
+        let arrowLeft = pager.eq(current);
+        prev.fadeOut(300);
+        arrowLeft.removeClass('on');
+        current++;
+    
+        if(current ==moving2.size()){
+            current=0;
+        }
+    
+        let next = moving2.eq(current);
+        let arrowRight = pager.eq(current);
+        next.fadeIn(300);
+        arrowRight.addClass('on');
     },4000);
 };
-
-$(moving).hover(function(){
+$('.banner').hover(function(){
     clearInterval(timer);
-},function(){
+}, function(){
     slide();
 });
-$(arrowRight).hover(function(){
-    clearInterval(timer);
-},function(){
-    slide();
-});
-$(arrowLeft).hover(function(){
-    clearInterval(timer);
-},function(){
-    slide();
-});
-
 // 양쪽 arr버튼 관련
-$(arrowRight).click(function(){
-    moving.fadeOut(500, function(){
-        $(this).find('li:first').insertAfter($(this).find('li:last'));
-        $(this).fadeIn().css({left:0});
+arrowRight.click(function(){
+    let prev = moving2.eq(current);
+    let arrowLeft = pager.eq(current);
+    prev.fadeOut(300);
+    arrowLeft.removeClass('on');
+    current++;
 
-        current++;
-        $(this).find('.pager').find('span').removeClass('on').eq(current).addClass('on');
-        if(current==pager.size()){current=0; pager.eq(0).addClass('on')};
-    });
+    if(current ==moving2.size()){
+        current=0;
+    }
+
+    let next = moving2.eq(current);
+    let arrowRight = pager.eq(current);
+    next.fadeIn(300);
+    arrowRight.addClass('on');
 });
-$(arrowLeft).click(function(){
-    moving.fadeOut(function(){
-        moving.find('li:last').insertBefore(moving.find('li:first'));
-        moving.fadeIn().css({left:0});
 
-        current--;
-        $(this).find('.pager').find('span').removeClass('on').eq(current).addClass('on');
-        if(current==-pager.size()){current=0; pager.eq(0).addClass('on')};
-    });
-}); 
+arrowLeft.click(function(){
+    let prev = moving2.eq(current);
+    let arrowLeft = pager.eq(current);
+    prev.fadeOut(300);
+    arrowLeft.removeClass('on');
+    current--;
+
+    if(current == -moving2.size()){
+        current=0;
+    }
+
+    let next = moving2.eq(current);
+    let arrowRight = pager.eq(current);
+    next.fadeIn(300);
+    arrowRight.addClass('on');
+});
+
 
 // 배너 하단 버튼 관련
 
-slideDotBtn()
-function slideDotBtn(){
-    let dotBtns = $('.pager span');
-    
-    if(dotBtns.className() =="on"){
-        return false;
-    }else{
-        
-    }
+function slideDotBtn1(i){
+    // 현재랑 같다면 아무것도 안함.
+    if(current==i) return;
+
+    let currentEl = moving2.eq(current);
+    let nextEl = moving2.eq(i);
+
+    console.log(nextEl);
+
+    currentEl.fadeOut(500);
+    nextEl.fadeIn(500);
+    current=i;
 };
 
+function slideDotBtn2(i){
+    // 현재랑 같다면 아무것도 안함.
+    if(current==i) return;
 
+    let currentEl = moving2.eq(current);
+    let nextEl = moving2.eq(i);
+
+    currentEl.fadeOut(500);
+    nextEl.fadeIn(500);
+    current=i;
+};
+
+pager.click(function(){
+    let tg = $(this);
+    let i = tg.index();
+
+    pager.removeClass('on');
+    tg.addClass('on');
+
+    if(current>i){
+        slideDotBtn1(i);
+    }else{
+        slideDotBtn2(i);
+    }
+});
 
 // 보도자료 관련 변수
 var pressTitle = document.getElementById("pressTitle");
@@ -93,7 +128,6 @@ pressTitle.addEventListener('click', () => {
     yellowBar1.style.color = '#222';
     yellowBar2.style.borderBottom = 'none';
     yellowBar2.style.color = 'gray';
-    return false;
 });
 
 jobTitle.addEventListener('click', () => {
@@ -103,7 +137,6 @@ jobTitle.addEventListener('click', () => {
     yellowBar1.style.color = 'gray';
     yellowBar2.style.borderBottom = '3px solid #fcd204';
     yellowBar2.style.color = '#222';
-    return false;
 }); // 보도자료 내용 변경을 위함
 
 
@@ -133,3 +166,39 @@ closeBtn2.addEventListener('click', () => {
     return false;
 });
 
+// back to top
+let btt = document.getElementById('back_to_top');
+let docEl = document.documentElement; //문서 자체를 html가져와서 변수대입
+let offset; //값 미정된 스크롤양
+let scrollPos; //스크롤양
+let docHeight; //문서의 높이값
+
+scrollPos = docEl.scrollTop;
+console.log(scrollPos);
+
+docHeight=Math.max(docEl.offsetHeight, docEl.scrollHeight);
+if(docHeight !=0){
+    offset = docHeight/4; //끝까지 스크롤 되지않고 1/4만 스크롤
+}
+window.addEventListener('scroll', function(){
+    scrollPos = docEl.scrollTop;
+    if(scrollPos > offset){
+        btt.className="visible";
+    }else{
+        btt.className ="";
+    }
+});
+btt.addEventListener("click", function(e){
+    e.preventDefault(); //링크 본연의 기능을 막아주는 역할
+    scrollToTop()
+});
+
+function scrollToTop(){
+    let scrollInterval = setInterval(function(){
+        if(scrollPos !=0){
+            window.scrollBy(0,-55)
+        }else{
+            clearInterval(scrollInterval);
+        }
+    }, 20)
+}
