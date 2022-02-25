@@ -64,8 +64,10 @@ body {font-size: 18px;font-family: 'Noto Sans KR', sans-serif; }
 
 /* 소방청 로고 */
 .header>.headerBottom>.headerBottomInner>.TitleLogo {margin: 16px 0;width: 350px;height: 50px;float: left; } 
+.header>.headerBottom>.headerBottomInner>.TitleLogo a h1{ display: none;} 
 .header>.headerBottom>.headerBottomInner>.TitleLogo a img {width: 190px;height: 50px; }
 .header>.headerBottom>.headerBottomInner>.TitleLogo a:nth-child(2) img {width: 120px;height: 50px;margin-left: 15px; } 
+
 
 
 /* 메뉴바 */
